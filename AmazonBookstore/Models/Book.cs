@@ -43,5 +43,8 @@ namespace AmazonBookstore.Models
 
         [Required]
         public double Price { get; set; }
+
+        [Required]
+        public int PrintLength { get; set; }
     }
 }

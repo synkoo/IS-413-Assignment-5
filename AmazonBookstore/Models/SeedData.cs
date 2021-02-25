@@ -24,6 +24,7 @@ namespace AmazonBookstore.Models
             {
                 context.Books.AddRange(
 
+                    //Books have been updated to include # Pages
                     new Book
                     {
                         Title = "Les Miserables",
@@ -33,7 +34,8 @@ namespace AmazonBookstore.Models
                         ISBN = "978-0451419439",
                         Classification = "Fiction",
                         Category = "Classic",
-                        Price = 19.95
+                        Price = 19.95,
+                        PrintLength = 1488
                     },
 
                     new Book
@@ -46,7 +48,8 @@ namespace AmazonBookstore.Models
                         ISBN = "978-0743270755",
                         Classification = "Non-Fiction",
                         Category = "Biography",
-                        Price = 14.58
+                        Price = 14.58,
+                        PrintLength = 944
                     },
 
                     new Book
@@ -58,7 +61,8 @@ namespace AmazonBookstore.Models
                         ISBN = "978-0553384611",
                         Classification = "Non-Fiction",
                         Category = "Biography",
-                        Price = 21.54
+                        Price = 21.54,
+                        PrintLength = 832
                     },
 
                     new Book
@@ -71,7 +75,8 @@ namespace AmazonBookstore.Models
                         ISBN = "978-0812981254",
                         Classification = "Non-Fiction",
                         Category = "Biography",
-                        Price = 11.61
+                        Price = 11.61,
+                        PrintLength = 864
                     },
 
                     new Book
@@ -83,7 +88,8 @@ namespace AmazonBookstore.Models
                         ISBN = "978-0812974492",
                         Classification = "Non-Fiction",
                         Category = "Historical",
-                        Price = 13.33
+                        Price = 13.33,
+                        PrintLength = 528
                     },
 
                     new Book
@@ -95,7 +101,8 @@ namespace AmazonBookstore.Models
                         ISBN = "978-0804171281",
                         Classification = "Fiction",
                         Category = "Historical Fiction",
-                        Price = 15.95
+                        Price = 15.95,
+                        PrintLength = 288
                     },
 
                     new Book
@@ -107,7 +114,8 @@ namespace AmazonBookstore.Models
                         ISBN = "978-1455586691",
                         Classification = "Non-Fiction",
                         Category = "Self-Help",
-                        Price = 14.99
+                        Price = 14.99,
+                        PrintLength = 304
                     },
 
                     new Book
@@ -119,7 +127,8 @@ namespace AmazonBookstore.Models
                         ISBN = "978-1455523023",
                         Classification = "Non-Fiction",
                         Category = "Self-Help",
-                        Price = 21.66
+                        Price = 21.66,
+                        PrintLength = 240
                     },
 
                     new Book
@@ -131,7 +140,8 @@ namespace AmazonBookstore.Models
                         ISBN = "978-1591847984",
                         Classification = "Non-Fiction",
                         Category = "Business",
-                        Price = 29.16
+                        Price = 29.16,
+                        PrintLength = 400
                     },
 
                     new Book
@@ -143,7 +153,49 @@ namespace AmazonBookstore.Models
                         ISBN = "978-0553393613",
                         Classification = "Fiction",
                         Category = "Thrillers",
-                        Price = 15.03
+                        Price = 15.03,
+                        PrintLength = 642
+                    },
+
+                    // 3 New Books added to Database
+                    new Book
+                    {
+                        Title = "Charlie and the Chocolate Factory",
+                        AuthorFirst = "Roald",
+                        AuthorLast = "Dahl",
+                        Publisher = "Puffin Books",
+                        ISBN = "978-0142410318",
+                        Classification = "Fiction",
+                        Category = "Adventure",
+                        Price = 6.65,
+                        PrintLength = 192
+                    },
+
+                    new Book
+                    {
+                        Title = "Hacking Growth",
+                        AuthorFirst = "Sean",
+                        AuthorLast = "Ellis",
+                        Publisher = "Currency",
+                        ISBN = "978-0451497215",
+                        Classification = "Non-Fiction",
+                        Category = "Business",
+                        Price = 21.64,
+                        PrintLength = 320
+                    },
+
+                    new Book
+                    {
+                        Title = "How Will You Measure Your Life?",
+                        AuthorFirst = "Clayton",
+                        AuthorMiddle = "M.",
+                        AuthorLast = "Christensen",
+                        Publisher = "Harper Business",
+                        ISBN = "978-0007490547",
+                        Classification = "Non-Fiction",
+                        Category = "Self-Help",
+                        Price = 18.67,
+                        PrintLength = 240
                     }
                 );
 
