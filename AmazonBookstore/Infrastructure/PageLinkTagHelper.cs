@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using AmazonBookstore.Models.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
@@ -27,6 +28,11 @@ namespace AmazonBookstore.Infrastructure
 
         public string PageAction { get; set; }
 
+
+        [HtmlAttributeName(DictionaryAttributePrefix ="page-url-")]
+        public Dictionary<string, object> PageUrlValues { get; set; } = new Dictionary<string, object>();
+
+
         public bool PageClassesEnabled { get; set; } = false;
 
         public string PageClass { get; set; }
@@ -46,7 +52,10 @@ namespace AmazonBookstore.Infrastructure
             {
                 //Build the tag
                 TagBuilder tag = new TagBuilder("a");
-                tag.Attributes["href"] = urlHelper.Action(PageAction, new { page = i });
+
+                PageUrlValues["page"] = i;
+
+                tag.Attributes["href"] = urlHelper.Action(PageAction, PageUrlValues);
 
                 if (PageClassesEnabled)
                 {

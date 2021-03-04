@@ -1,0 +1,16 @@
+﻿@model Book 
+
+<div class="card card-outline-primary m-1 p-1 shadow-sm">
+    <div class="bd-faded p-1">
+        <h3>@Model.Title</h3>
+        <p><b>Author:</b> @Model.AuthorFirst @Model.AuthorMiddle @Model.AuthorLast</p>
+        <p><b>Publisher:</b> @Model.Publisher</p>
+        <p><b>ISBN:</b> @Model.ISBN</p>
+        <p><b>Classification:</b> @Model.Classification</p>
+        <p><b>Category:</b> @Model.Category</p>
+        <p><b>Print Length:</b> @Model.PrintLength pages</p>
+        <span class="bade badge-pill badge-primary" style="float:right;text-align:center;">
+            <small><b>Price:</b> $@Model.Price</small>
+        </span>
+    </div>
+</div>

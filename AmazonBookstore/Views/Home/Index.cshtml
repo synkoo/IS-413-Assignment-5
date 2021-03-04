@@ -4,44 +4,29 @@
 
 @model BookListViewModel
 
-@*3 New Bootstrap Commands I used:*@
-@*1. "form-control mr-sm-2" for the search bar.*@
-@*2. "shadow-sm" to create small shadows for the cards*@
-@*3. "col-sm-2" and "col-sm-10" for adjusting when the window size shrinks*@
-
 <div class="container">
     <div class="row">
         <div class="col-md-2 col-sm-2">
             <div class="showcase-left">
-                <h4>There will be a list of categories in this column.</h4>
+                <h4>Search By Category</h4>
+
+                @*Category Menu Inserted via ViewComponent*@
+                <vc:navigation-menu />
             </div>
         </div>
         <div class="col-md-10 col-sm-10">
             <div class="showcase-right">
                 @foreach (var x in Model.Books)
                 {
-                    <div class="card card-outline-primary m-1 p-1 shadow-sm">
-                        <div class="bd-faded p-1">
-                            <h3>@x.Title</h3>
-                            <p><b>Author:</b> @x.AuthorFirst @x.AuthorMiddle @x.AuthorLast</p>
-                            <p><b>Publisher:</b> @x.Publisher</p>
-                            <p><b>ISBN:</b> @x.ISBN</p>
-                            <p><b>Classification:</b> @x.Classification</p>
-                            <p><b>Category:</b> @x.Category</p>
-                            <p><b>Print Length:</b> @x.PrintLength pages</p>
-                            <span class="bade badge-pill badge-primary" style="float:right;text-align:center;">
-                                <small><b>Price:</b> $@x.Price</small>
-                            </span>
-                        </div>
-                    </div>
+                    <partial name="BookSummary" model="x" />
                 }
             </div>
         </div>
     </div>
-    <div class="text-center">
+    <div class="text-center page-number">
         <div page-model="@Model.PagingInfo" page-action="Index" page-classes-enabled="true" page-class="btn"
              page-class-normal="btn-outline-dark"
-             page-class-selected="btn-primary"
+             page-class-selected="btn-primary" page-url-category="@Model.CurrentCategory"
              class="btn-group m-1"></div>
     </div>
 </div>

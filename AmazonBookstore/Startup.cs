@@ -29,7 +29,7 @@ namespace AmazonBookstore
 
             services.AddDbContext<BookstoreDbContext>(options =>
             {
-                options.UseSqlServer(Configuration["ConnectionStrings:BookConnection"]);
+                options.UseSqlite(Configuration["ConnectionStrings:BookConnection"]);
             });
 
             services.AddScoped<IBookRepository, EFBookRepository>();
@@ -55,9 +55,22 @@ namespace AmazonBookstore
 
             app.UseAuthorization();
 
-            // Set the URL pattern to use /P2, /P3, /P4, etc
+            // Allow filtering results by category
             app.UseEndpoints(endpoints =>
             {
+            endpoints.MapControllerRoute("catpage",
+                "{category}/{page:int}",
+                new { Controller = "Home", action = "Index" });
+
+            endpoints.MapControllerRoute("page",
+                "{page:int}",
+                new { Controller = "Home", action = "Index" });
+
+            // User-Friendly Endpoints
+            endpoints.MapControllerRoute("category",
+                "{category}",
+                new { Controller = "Home", action = "Index", page = 1 });
+
                 endpoints.MapControllerRoute(
                     "pagination",
                     "Books/P{page}",
