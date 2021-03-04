@@ -14,7 +14,7 @@
         "outputPath": "/Users/Sangyoon/Projects/AmazonBookstore/AmazonBookstore/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/Sangyoon/.nuget/NuGet/NuGet.Config"
+          "/Users/Sangyoon/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
