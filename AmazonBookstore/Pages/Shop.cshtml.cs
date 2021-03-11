@@ -45,6 +45,7 @@ namespace AmazonBookstore.Pages
             return RedirectToPage(new { returnUrl = returnUrl });
         }
 
+        //Remove Item
         public IActionResult OnPostRemove(long bookId, string returnUrl)
         {
             Cart.RemoveLine(Cart.Lines.First(cl => cl.Book.BookId == bookId).Book);
