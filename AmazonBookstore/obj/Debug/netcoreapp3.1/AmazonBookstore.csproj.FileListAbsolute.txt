@@ -76,3 +76,9 @@
 /Users/Sangyoon/Projects/AmazonBookstore/AmazonBookstore/bin/Debug/netcoreapp3.1/runtimes/win-arm64/native/e_sqlite3.dll
 /Users/Sangyoon/Projects/AmazonBookstore/AmazonBookstore/bin/Debug/netcoreapp3.1/runtimes/win-x64/native/e_sqlite3.dll
 /Users/Sangyoon/Projects/AmazonBookstore/AmazonBookstore/bin/Debug/netcoreapp3.1/runtimes/win-x86/native/e_sqlite3.dll
+/Users/Sangyoon/Projects/AmazonBookstore/AmazonBookstore/obj/Debug/netcoreapp3.1/Razor/Pages/_ViewImports.cshtml.g.cs
+/Users/Sangyoon/Projects/AmazonBookstore/AmazonBookstore/obj/Debug/netcoreapp3.1/Razor/Pages/_ViewStart.cshtml.g.cs
+/Users/Sangyoon/Projects/AmazonBookstore/AmazonBookstore/obj/Debug/netcoreapp3.1/Razor/Pages/Shop.cshtml.g.cs
+/Users/Sangyoon/Projects/AmazonBookstore/AmazonBookstore/obj/Debug/netcoreapp3.1/Razor/Pages/Shared/_CartLayout.cshtml.g.cs
+/Users/Sangyoon/Projects/AmazonBookstore/AmazonBookstore/bin/Debug/netcoreapp3.1/libman.json
+/Users/Sangyoon/Projects/AmazonBookstore/AmazonBookstore/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Components/CartSummary/Default.cshtml.g.cs

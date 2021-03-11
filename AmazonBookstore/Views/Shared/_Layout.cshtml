@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - AmazonBookstore</title>
 
+    <link rel="stylesheet" href="~/lib/font-awesome/css/all.min.css"/>
     @*App is using Bootstrap*@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
@@ -20,6 +21,9 @@
                 <input class="form-control mr-sm-2" type="text" placeholder="Search">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </form>
+            <div class="col-6 text-right">
+                <vc:cart-summary/>
+            </div>
         </div>
     </nav>
 

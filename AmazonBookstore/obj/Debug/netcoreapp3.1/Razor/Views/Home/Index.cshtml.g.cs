@@ -33,8 +33,15 @@ using AmazonBookstore.Models.ViewModels;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 4 "/Users/Sangyoon/Projects/AmazonBookstore/AmazonBookstore/Views/_ViewImports.cshtml"
+using AmazonBookstore.Infrastructure;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"f08e782b2937bbbabbf375e2c6b1e7a742c9bbd9", @"/Views/Home/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"9c2f33ff7d818ef2cedd412b82fb873b0f3a7938", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"19fdce07451063d5fa5aee5f11577008c92d09f4", @"/Views/_ViewImports.cshtml")]
     public class Views_Home_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<BookListViewModel>
     {
         private global::AspNetCore.Views_Home_Index.__Generated__NavigationMenuViewComponentTagHelper __NavigationMenuViewComponentTagHelper;
@@ -80,7 +87,7 @@ using AmazonBookstore.Models.ViewModels;
             WriteLiteral("\n");
             WriteLiteral("\n<div class=\"container\">\n    <div class=\"row\">\n        <div class=\"col-md-2 col-sm-2\">\n            <div class=\"showcase-left\">\n                <h4>Search By Category</h4>\n\n");
             WriteLiteral("                ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("vc:navigation-menu", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "f08e782b2937bbbabbf375e2c6b1e7a742c9bbd95835", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("vc:navigation-menu", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "f08e782b2937bbbabbf375e2c6b1e7a742c9bbd96030", async() => {
             }
             );
             __NavigationMenuViewComponentTagHelper = CreateTagHelper<global::AspNetCore.Views_Home_Index.__Generated__NavigationMenuViewComponentTagHelper>();
@@ -102,7 +109,7 @@ using AmazonBookstore.Models.ViewModels;
 #line hidden
 #nullable disable
             WriteLiteral("                    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "f08e782b2937bbbabbf375e2c6b1e7a742c9bbd97136", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "f08e782b2937bbbabbf375e2c6b1e7a742c9bbd97331", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_TagHelpers_PartialTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper>();
@@ -133,7 +140,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_PartialTagHelper.Model = x;
 #line hidden
 #nullable disable
             WriteLiteral("            </div>\n        </div>\n    </div>\n    <div class=\"text-center page-number\">\n        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("div", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f08e782b2937bbbabbf375e2c6b1e7a742c9bbd98980", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("div", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f08e782b2937bbbabbf375e2c6b1e7a742c9bbd99175", async() => {
             }
             );
             __AmazonBookstore_Infrastructure_PageLinkTagHelper = CreateTagHelper<global::AmazonBookstore.Infrastructure.PageLinkTagHelper>();
